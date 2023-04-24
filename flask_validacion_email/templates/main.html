@@ -1,0 +1,15 @@
+{% extends "validacion_email_base.html" %}
+{% block titulo %}Validacion de Email{% endblock %}
+{% block contenido1 %}<h1>Validacion de Email</h1>{% endblock %}
+{% block contenido2 %}
+  <form action="/grabar" method="post">
+    <div>
+      <div><label for="email">Email</label></div>
+      <div><input minlength="8" maxlength="100" type="email" name="email" id="email" required placeholder="youremail@email.com"></div>
+    </div>
+    <div class="divboton">
+        <button type="submmit" name="enviar" value="enviar">Enviar</button>
+        <button onclick="return confirm('Desea eliminar el email?')" type="submmit" name="eliminar" value="eliminar">Eliminar</button>
+      </div>
+  </form>
+{% endblock %}

@@ -1,0 +1,101 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{height: 30px;}
+
+#iconapp{
+    width: 75px;
+    margin-left: 30px;
+}
+
+
+.principal{
+    border: 1px solid black;
+    max-width: 650px;
+    height:300px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+#divicon{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 120px;
+    align-self: center;
+}
+
+#divicon img{
+    margin: -10px 0 0 15px;
+}
+
+
+.titulo_formulario{
+    text-align: center;
+    align-self: center;
+}
+
+.titulo_formulario h1{
+    margin: 0 0 0 -20px;
+    padding: 0;
+}
+
+.cuerpo_formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.cuerpo_formulario form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cuerpo_formulario form div div{
+    width: 300px;
+}
+
+
+.cuerpo_formulario form div div label{
+font-size: 1.2em;
+}
+
+.cuerpo_formulario form div div input{
+    width: 250px;
+}
+
+.cuerpo_formulario form div div select{
+    width: 260px;
+}
+
+.cuerpo_formulario form div div textarea{
+    width: 255px;
+    height: 60px;
+}
+
+
+.cuerpo_formulario form div button{
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    width: 100px;
+    margin-top: 20px;
+    font-weight: bold;
+    height: 25px;
+}
+
+
+

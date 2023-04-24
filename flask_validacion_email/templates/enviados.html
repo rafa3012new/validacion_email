@@ -1,0 +1,22 @@
+{% extends "validacion_email_base.html" %}
+{% block titulo %}Validacion Email{% endblock %}
+{% block contenido1 %}<h3>Informacion Enviada al {{hoy}}</h3>{% endblock %}
+{% block contenido2 %}
+   <div class="subformulario">
+    <div class="campo">
+      <p class="etiqueta">Emails registrados :</p>
+      <ul class="lista_lenguajes_prog">
+      {#Se utiliza un ciclo for para descargar la variable de sesion de tipo array en un ul#}
+      {%for i in emails_enviados%}
+        <li class="contenido" style="display:flex; gap:30px;"><div style="width:250px;">{{i.email}}</div><div style="width:250px;">{{i.created_at}}</div></li>
+      {%endfor%}
+      </ul>
+    </div>
+        <br>
+    <br>
+    <br>
+    <div>
+      <a href="/limpiar">Regresar</a>
+    </div>
+  </div>
+{% endblock %}
